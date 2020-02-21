@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -23,10 +24,18 @@ class ViewController: UIViewController {
         if emailTextField.text != ""
         {
             
-        }
         if passwordTextField.text != ""
         {
-            
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+                if error == nil
+                {
+                    self.performSegue(withIdentifier: "signupToWelcome", sender: self)
+                }
+                else{
+                    print("Error")
+                }
+            }
+        }
         }
         
     }

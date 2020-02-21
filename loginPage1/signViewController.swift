@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class signViewController: UIViewController {
 
@@ -28,26 +29,38 @@ class signViewController: UIViewController {
     @IBAction func signinButtonPressed(_ sender: UIButton) {
         
         if firstNameTextField.text != ""{
-            if lastNameTextField.text != ""{
-                if emailidTextField.text != ""{
-                    if password1TextField.text != ""{
-
-                        if confirmPasswordTextField.text != ""{
-                            
-                        }
+        
+        
+        if lastNameTextField.text != ""{
+        
+        
+        if emailidTextField.text != ""{
+        
+        
+        if password1TextField.text != ""{
+        
+        
+        if confirmPasswordTextField.text != ""{
+            Auth.auth().createUser(withEmail: emailidTextField.text!, password: password1TextField.text!) { (user,error) in
+                if error == nil{
+                    self.performSegue(withIdentifier: "signinTologin", sender: self)
+                }
+                else{
+                    print("Error")
+                }
+            }
+        }
+    }
+}
+}
+}
                               
-                    }
+                    
                     
                            
-                }
-                
-                
-            }
-            
-        }
-        
-       
     }
+                
+                
     
     
 }

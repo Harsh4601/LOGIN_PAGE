@@ -87,8 +87,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logged In Successfully!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uy7-tX-qg2">
-                                <rect key="frame" x="28" y="204" width="318" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logged In Successfully!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uy7-tX-qg2">
+                                <rect key="frame" x="28" y="206" width="318" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -151,7 +151,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signinButtonPressed:" destination="9jN-sc-fyt" eventType="touchUpInside" id="vD2-Oa-pQ6"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="signinToLogin" id="dgx-9Q-cIR"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="signinTologin" id="Esm-TH-ly8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-gJ-bXl">
@@ -176,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oh5-nr-unV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909.5999999999999" y="374.66266866566718"/>
+            <point key="canvasLocation" x="2041" y="464"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fHv-m9-u2s">
@@ -198,7 +198,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EmI-DN-lh1"/>
-        <segue reference="dgx-9Q-cIR"/>
+        <segue reference="Esm-TH-ly8"/>
     </inferredMetricsTieBreakers>
 </document>

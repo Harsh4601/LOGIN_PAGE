@@ -198,7 +198,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EmI-DN-lh1"/>
         <segue reference="Esm-TH-ly8"/>
     </inferredMetricsTieBreakers>
 </document>
